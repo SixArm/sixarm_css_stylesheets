@@ -11,19 +11,21 @@
 
 html {
   font-size: 100%; /* Avoids IE 5-7 bug with EM fonts */
+  height: 100%; /* For CSS standards because % sizes inherit from parents */
 }
 
 body {
   margin: 0;
   padding: 0;
   /*
-  Here are some good font-family examples:
+  Good font-family examples:
   font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-family: Georgia, "DejaVu Serif", Norasi, serif; 
   */
   font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
   font-size: .8em; /* Adapt for your chosen type! Usual range: .625 to 1 */
+  height: 100%; /* For CSS standards because % sizes inherit from parents */
   line-height: 1.4; /* Adapt for your design and chosen type! 1.1-1.2 is good
     for title text or narrow column text but you will want to increase that
     to something in the 1.2-1.8 range for main content text. */
@@ -216,3 +218,98 @@ q:before, q:after {
 blockquote p, li p {
   margin: .5em 0;
 }
+
+
+/*** CUSTOM DIVS WE USE OFTEN ***/
+
+#bodycontent {
+  margin: 0 auto;
+  text-align: left;
+  width: 960px; /* We like 960 layout because it's easy to divide many ways */
+}
+
+#pageheader {}
+#pagemiddle {}
+#pagefooter {}
+
+.clear {clear: both;}
+.logo {}
+.floatleft {float:left;}
+.floatright {float:right;}
+.navigation {}
+.testimonials {}
+.testimonial {}
+
+table.layout {
+ border: none;
+ border-collapse: collapse;
+ border-spacing: 0;
+ margin: 0;
+ padding: 0;
+}
+
+table.layout th, table.layout td {
+ border: none;
+ margin: 0;
+ padding: 0;
+}
+
+table.layout img {
+ display: block;
+}
+
+table.tableruled {
+ border: 1px solid #ccc;
+}
+
+table.tableruled th{
+ background: #fe9;
+ border: 1px solid #ccc;
+ padding: 4px 7px 4px 7px;
+}
+
+table.tableruled td{
+ background: #eee;
+ border: 1px solid #ccc;
+ padding: 4px 6px 4px 6px;
+}
+
+.speechbubble {
+ position:relative;
+ padding:5px 12px;
+ margin:0;
+ color:#000;
+ background:#ccc; /* default for browsers without gradient support */
+ /* css3 */
+ -moz-border-radius:12px;
+ -webkit-border-radius:12px;
+ border-radius:12px;
+ /* NOTE: webkit gradient implementation is not as per spec */
+ background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+ background:-moz-linear-gradient(top, #eee, #ccc);
+ background:-o-linear-gradient(top, #eee, #ccc);
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.speechbubble + p {
+ margin:10px 80px 2em 0; 
+ text-align:right; 
+ font-style:italic;
+}
+
+/* creates the triangle */
+.speechbubble:after {
+    content:"";
+    display:block; /* reduce the damage in FF3.0 */
+    position:absolute;
+    bottom:-30px;
+    right:30px;
+    width:0;
+    height:0;
+    border-width:0 0 30px 30px;
+    border-style:solid;
+    border-color:transparent #ccc;
+}
+
+
+
