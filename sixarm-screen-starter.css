@@ -11,7 +11,6 @@
 
 html {
   font-size: 100%; /* Avoids IE 5-7 bug with EM fonts */
-  height: 100%; /* For CSS standards because % sizes inherit from parents */
 }
 
 body {
@@ -25,7 +24,6 @@ body {
   */
   font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
   font-size: .8em; /* Adapt for your chosen type! Usual range: .625 to 1 */
-  height: 100%; /* For CSS standards because % sizes inherit from parents */
   line-height: 1.4; /* Adapt for your design and chosen type! 1.1-1.2 is good
     for title text or narrow column text but you will want to increase that
     to something in the 1.2-1.8 range for main content text. */
@@ -133,24 +131,35 @@ ul.none, ol.none, dl.none {
  padding: 0;
 }
 
-ul, ol {
+ul.ok, ol.ok {
   margin: .75em 0 .75em 32px;
   padding: 0;
 }
 
-dl {
+li.ok {
+ margin-top: 0.5em;
+ margin-bottom: 0.5em;
+ padding-left: 2em;
+}
+
+dl.ok {
   margin: .75em 0;
 }
 
-dt {
-  margin: .75em 0 0 0;
-  font-weight: bold;
+dt.ok {
+ margin: .75em 0 0 0;
+ font-weight: bold;
+ padding-top: 1em;
+ padding-bottom: 0.5em;
 }
 
-dd {
-  margin: .25em 0 .25em 32px;
+dd.ok {
+ margin: .25em 0 .25em 32px;
+ padding-left: 2em;
 }
 
+
+/**** GENERAL ****/
 
 /*** TABLES ***/
 
@@ -274,16 +283,34 @@ table.tableruled td{
  padding: 4px 6px 4px 6px;
 }
 
+
+/*** MIXINS ***/
+
+.margin0{
+ margin: 0;
+}
+
+.padding0{
+ padding: 0;
+}
+
+.colorwhite{
+ color: white;
+}
+
+
+/*** EFFECTS ***/
+
 .speechbubble {
  position:relative;
- padding:5px 12px;
+ padding:5px 15px;
  margin:0;
  color:#000;
  background:#ccc; /* default for browsers without gradient support */
  /* css3 */
- -moz-border-radius:12px;
- -webkit-border-radius:12px;
- border-radius:12px;
+ -moz-border-radius:15px;
+ -webkit-border-radius:15px;
+ border-radius:15px;
  /* NOTE: webkit gradient implementation is not as per spec */
  background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
  background:-moz-linear-gradient(top, #eee, #ccc);
