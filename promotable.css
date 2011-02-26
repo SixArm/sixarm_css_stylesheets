@@ -1,0 +1,45 @@
+/*** PROMO TABLE ****/
+
+#promotable{
+}
+
+#promotable td{
+ padding-top: 1.5em;
+}
+
+#promotable h2{
+ font-size: 1.1em;
+ font-weight: normal;
+ padding-left: 10px;
+ color: #555;
+}
+
+#promotable h3{
+ padding-left: 0;
+ font-size: 1.8em;
+ padding-bottom: 0.3em;
+}
+
+#promotable td.spacer{
+ padding-left: 20px;
+}
+
+#promotable blockquote{
+ color: #333;
+ padding-top: 5px;
+ padding-left: 0.4em;
+}
+
+#promotable cite{
+ font-size: 0.9em;
+ padding-left: 0.9em;
+ color: #555;
+}
+ 
+#promotable td.promotable_img {
+ padding-right: 15px;
+}
+
+#promotable td.promotable_txt {
+ font-size: 110%;
+}

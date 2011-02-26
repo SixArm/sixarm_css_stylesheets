@@ -1,0 +1,9 @@
+form, fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input, button, select {
+  vertical-align: middle; /* Not perfect, but best compromise for most browsers */
+}

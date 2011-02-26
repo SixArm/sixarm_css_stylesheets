@@ -1,0 +1,39 @@
+/*** SPEECHBUBBLE ***/
+
+.speechbubble {
+ position:relative;
+ padding:5px 15px;
+ margin:0;
+ color:#000;
+ background:#ccc; /* default for browsers without gradient support */
+ /* css3 */
+ -moz-border-radius:15px;
+ -webkit-border-radius:15px;
+ border-radius:15px;
+ /* NOTE: webkit gradient implementation is not as per spec */
+ background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+ background:-moz-linear-gradient(top, #eee, #ccc);
+ background:-o-linear-gradient(top, #eee, #ccc);
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.speechbubble + p {
+ margin:10px 80px 2em 0; 
+ text-align:right; 
+ font-style:italic;
+}
+
+/* creates the triangle */
+.speechbubble:after {
+    content:"";
+    display:block; /* reduce the damage in FF3.0 */
+    position:absolute;
+    bottom:-30px;
+    right:30px;
+    width:0;
+    height:0;
+    border-width:0 0 30px 30px;
+    border-style:solid;
+    border-color:transparent #ccc;
+}
+

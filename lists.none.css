@@ -1,0 +1,6 @@
+ul.none, ol.none, dl.none {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+

@@ -1,0 +1,27 @@
+ul.ok, ol.ok {
+  margin: .75em 0 .75em 32px;
+  padding: 0;
+}
+
+li.ok {
+ margin-top: 0.5em;
+ margin-bottom: 0.5em;
+ padding-left: 2em;
+}
+
+dl.ok {
+  margin: .75em 0;
+}
+
+dt.ok {
+ margin: .75em 0 0 0;
+ font-weight: bold;
+ padding-top: 1em;
+ padding-bottom: 0.5em;
+}
+
+dd.ok {
+ margin: .25em 0 .25em 32px;
+ padding-left: 2em;
+}
+

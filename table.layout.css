@@ -1,0 +1,17 @@
+table.layout {
+ border: none;
+ border-collapse: collapse;
+ border-spacing: 0;
+ margin: 0;
+ padding: 0;
+}
+
+table.layout th, table.layout td {
+ border: none;
+ margin: 0;
+ padding: 0;
+}
+
+table.layout img {
+ display: block;
+}

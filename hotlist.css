@@ -1,0 +1,15 @@
+div.hotlist p{
+ margin: 0 0 0.3em 0;
+}
+
+div.hotlist ul{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+
+div.hotlist li{
+ margin: 0 0 0.5em 0;
+ padding: 0;
+}
+

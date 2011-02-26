@@ -1,0 +1,15 @@
+table.ruled {
+ border: 1px solid #ccc;
+}
+
+table.ruled th{
+ background: #fe9;
+ border: 1px solid #ccc;
+ padding: 4px 7px 4px 7px;
+}
+
+table.ruled td{
+ background: #eee;
+ border: 1px solid #ccc;
+ padding: 4px 6px 4px 6px;
+}

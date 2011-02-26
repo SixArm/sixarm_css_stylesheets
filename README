@@ -1,1 +1,4 @@
 SixArm.com » CSS » Cascading stylesheets for HTML layouts
+
+The clearfix.css code comes from "Lessons Learned Concerning the Clearfix CSS" by Jeff Starr:
+http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/

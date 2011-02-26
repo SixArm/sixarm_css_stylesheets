@@ -1,0 +1,17 @@
+table {
+  margin: 0;
+  border: 1px solid gray; /* Set to "none" to suppress the table border */
+  border-collapse: collapse; /* Default is "seperate" */
+  border-spacing: 0; /*! No IE 6-7 support */
+}
+
+table td, table th {
+  padding: 4px 7px; /* Set to "0" for no white space around cell contents */
+  border: 1px solid gray; /* Set to "none" to suppress cell borders */
+  text-align: left; /* Default for "th" is centered */
+  vertical-align: top; /* Default is "middle" */
+}
+
+table th {
+ font-weight: bold;
+}
