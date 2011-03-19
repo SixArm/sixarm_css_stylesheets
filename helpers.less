@@ -1,0 +1,31 @@
+/*
+  helpers for less: the dynamic stylesheet language.
+  see http://lesscss.org
+*/
+
+.radius (@radius: 10px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.square (@width: 10px) {
+ width: @width;
+ height: @width;
+}
+
+.circle (@radius: 10px) {
+ .radius(@radius);
+ width: @radius * 2;
+ height: @radius * 2;
+}
+
+.gradient (@from_top_color: #ffffff, @to_bottom_color: #ffffff) {
+ background: @from_top_color;
+ background: -webkit-gradient(linear, left top, left bottom, from(@from_top_color), to(@to_bottom_color));
+ background: -moz-linear-gradient(top, @from_top_color, @to_bottom_color);
+}
+
+
+
+
