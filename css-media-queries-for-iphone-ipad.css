@@ -1,0 +1,163 @@
+/*
+
+CSS Media Queries for iPhones & iPads
+http://stephen.io/mediaqueries
+
+*/
+
+/* iPhone X */
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio : 3) {
+	/* … */
+}
+
+/* iPhone X + landscape */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+	/* … */
+}
+
+/* iPhone X + portrait */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+    /* … */
+}
+
+/* iPad */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	/* … */
+}
+
+/* iPad + landscape */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	/* … */
+}
+
+/* iPad + portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    /* … */
+}
+
+/* iPad + @2x */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+	/* … */
+}
+
+/* iPad + @2x + landscape */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+	/* … */
+}
+
+/* iPad + @2x + portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    /* … */
+}
+
+/* iPad 1 & 2 */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+	/* … */
+}
+
+/* iPad 1 & 2 + landscape */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+	/* … */
+}
+
+/* iPad 1 & 2 + portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    /* … */
+}
+
+/* iPhone 6-7-8 Small */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { /* STYLES GO HERE */}
+
+/* iPhone 6-7-8 Small + landscape */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+/* iPhone 6-7-8 Small + portrait */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+    /* … */
+}
+
+/* iPhone 6-7-8 Plus */
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { /* STYLES GO HERE */}
+
+/* iPhone 6-7-8 Plus + landscape */
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+/* iPhone 6-7-8 Plus + portrait */
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+    /* … */
+}
